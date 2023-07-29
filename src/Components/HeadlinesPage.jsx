@@ -1,18 +1,6 @@
 import PropTypes from "prop-types";
 import HeadlineCard from "./HeadlineCard";
 
-const HeadlinesPage = (props) => {
-  return <>{displayData(props.dataArray)}</>;
-};
-
-HeadlinesPage.propTypes = {
-  dataArray: PropTypes.array,
-};
-
-HeadlinesPage.defaultProps = {
-  dataArray: [],
-};
-
 const displayData = (headlines) => {
   return headlines.map((headline) => {
     return (
@@ -23,6 +11,18 @@ const displayData = (headlines) => {
       />
     );
   });
+};
+
+const HeadlinesPage = (props) => {
+  return <>{displayData(props.dataArray)}</>;
+};
+
+HeadlinesPage.propTypes = {
+  dataArray: PropTypes.array,
+};
+
+HeadlinesPage.defaultProps = {
+  dataArray: [],
 };
 
 export default HeadlinesPage;
