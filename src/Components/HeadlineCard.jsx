@@ -4,7 +4,7 @@ import "bootstrap/dist/css/bootstrap.min.css";
 const HeadlineCard = (props) => {
   return (
     <>
-      <div className="card mb-3" style={{ width: "40rem" }}>
+      <div className="card mb-3" style={{ width: "35rem" }}>
         <img
           src={props.imageText}
           alt={props.headline}

@@ -26,9 +26,6 @@ function App() {
 
   return (
     <>
-      <h1 className="p-3 mb-2 bg-primary-subtle text-emphasis-primary">
-        Headlines Page
-      </h1>
       <HeadlinesPage dataArray={headlines} />
     </>
   );

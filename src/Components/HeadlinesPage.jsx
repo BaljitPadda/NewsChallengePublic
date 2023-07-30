@@ -1,4 +1,5 @@
 import PropTypes from "prop-types";
+import Title from "./Title";
 import HeadlineCard from "./HeadlineCard";
 
 const displayData = (headlines) => {
@@ -14,7 +15,12 @@ const displayData = (headlines) => {
 };
 
 const HeadlinesPage = (props) => {
-  return <>{displayData(props.dataArray)}</>;
+  return (
+    <>
+      <Title />
+      {displayData(props.dataArray)}
+    </>
+  );
 };
 
 HeadlinesPage.propTypes = {
