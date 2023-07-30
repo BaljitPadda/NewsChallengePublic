@@ -1,6 +1,7 @@
 import PropTypes from "prop-types";
 import Title from "./Title";
 import HeadlineCard from "./HeadlineCard";
+import "./css/HeadlinesPage.css";
 
 const displayData = (headlines) => {
   return headlines.map((headline) => {
@@ -17,8 +18,10 @@ const displayData = (headlines) => {
 const HeadlinesPage = (props) => {
   return (
     <>
-      <Title />
-      {displayData(props.dataArray)}
+      <div className="headlinesPage">
+        <Title />
+        {displayData(props.dataArray)}
+      </div>
     </>
   );
 };

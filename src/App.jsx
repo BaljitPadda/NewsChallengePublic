@@ -9,7 +9,6 @@ function App() {
   const getHeadlines = async () => {
     try {
       const response = await axios.get("http://localhost:3000/mockApiResponse");
-      console.log(response.data.response.results);
       return response.data.response.results;
     } catch (e) {
       console.log("No headlines found");
@@ -26,7 +25,9 @@ function App() {
 
   return (
     <>
-      <HeadlinesPage dataArray={headlines} />
+      <div className="app">
+        <HeadlinesPage dataArray={headlines} />
+      </div>
     </>
   );
 }
