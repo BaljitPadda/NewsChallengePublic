@@ -25,7 +25,6 @@ HeadlineCard.propTypes = {
 
 HeadlineCard.defaultProps = {
   headline: "Article Headline (default)",
-  imageText: "A relevant picture",
+  imageText: "./images/newspaper.jpg",
 };
-
 export default HeadlineCard;
