@@ -1,5 +1,17 @@
 # News Summary Challenge
 
+# My News Challenge Solution - Baljit Padda
+# Installation Instructions:
+```
+Please clone to your machine.
+Please use 'npm run dev' in the terminal.
+To run the tests, please use 'npm test' in the terminal.
+To check the coverage, please use 'npm test -- --coverage'.
+```
+
+
+
+
 ### Task
 
 You'll test-drive a single page application in React that send requests to the Guardian API to get Headline and Article data and display them. 
