@@ -8,7 +8,9 @@ function App() {
 
   const getHeadlines = async () => {
     try {
-      const response = await axios.get("http://localhost:3000/mockApiResponse");
+      const response = await axios.get(
+        "https://content.guardianapis.com/search?order-by=newest&show-fields=byline%2Cthumbnail%2Cheadline%2CbodyText&api-key=3cc97968-1693-479f-85a9-55fd3bbd8b23"
+      );
       return response.data.response.results;
     } catch (e) {
       console.log("No headlines found");
